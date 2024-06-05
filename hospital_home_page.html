@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hospital home page</title>
+
+    <style>
+        body {
+            font-family: "맑은 고딕","고딕","굴림";
+        }
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+            background-color: #ffffe6;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+        }
+
+        /* header까지  */
+
+        header nav {
+            float: left;
+            width: 87%;
+            margin-top: 0px;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            padding-bottom: 10px;
+            padding-left: 100px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            display: inline;
+            float: left;
+            font-weight: bold;
+            margin: 20px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: blue;
+        }
+
+        /* nav 까지 */
+
+        aside#left {
+            float: left;
+            width: 150px;
+	        height: 200px;
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+        aside ul li {
+            list-style: none;
+            border: 1px solid darkgrey;
+            background-color: gray;
+        }
+        aside ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        aside ul li:hover {
+            background-color: red;
+        }
+
+        /* aside 까지 */
+
+        article {
+            float: left;
+            width: 180px;
+	        height:220px;
+            padding: 20px;
+        }
+
+        /* article 까지 */
+
+        aside#right {
+            float: left;
+            width: 200px;
+            height: 450px;
+            margin-top: 40px;
+            padding-left: 10px;
+        }
+
+        footer {
+            clear: both;
+            padding: 30px;
+        }
+
+        input[type=submit] {
+            background-color: rgb(118, 175, 240);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        input[type=reset] {
+            background-color: rgb(118, 175, 240);
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+        input[type=submit]:hover {
+            background-color: #ecec76;
+            color: black;
+        }
+        input[type=reset]:hover {
+            background-color: #ecec76;
+            color: black;
+        }
+        article#at1{
+            margin-bottom: 20px;
+        }
+        article#at2{
+            margin-right: 10px;
+        }
+        aside#left ul {
+            padding-left: 0px;
+        }
+        section article#at1 {
+            padding-left: 10px;
+        }
+        section article#at2 {
+            padding-left: 10px;
+        }
+        aside#right #uname {
+            margin-bottom: 10px;
+        }
+        aside#right a {
+            text-decoration: none;
+            transition: 1s;
+
+        }
+        aside#right a:hover {
+        background-color: pink;
+        border: 1px solid rgb(118, 175, 240);
+        border-radius: 10px;
+    </style>
+
+</head>
+<body>
+    
+    <div id="wrapper">
+
+        <header>
+            <h1> <img src="HP1.jpg" width="50" height="50"> <a href="index.html">HOSPITAL</a> </h1>
+        <nav> 
+            <ul>
+                <li> <a href="#"> 진료안내 </a> </li>
+                <li> <a href="#"> 이용안내 </a> </li>
+                <li> <a href="#"> 건강정보 </a></li>
+                <li> <a href="#"> 고객참여 </a></li>
+                <li> <a href="#"> 병원소개 </a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <aside id="left">
+            <h2> 카테고리 </h2>
+            <ul>
+                <li> <a href="#"> 진료예약 </a> </li>
+                <li> <a href="#"> 진료과/센터 </a> </li>
+                <li> <a href="#"> 진료 안내</a> </li>
+                <li> <a href="#"> 동의서 </a> </li>
+                <li> <a href="#"> 고객의 소리 </a> </li>
+                <li> <a href="#"> 공공부문 </a> </li>
+                <li> <a href="#"> 건강증진센터</a> </li>
+            </ul>
+        </aside>
+
+        <section>
+            <article id="at1"> 
+                <img src="HP2.jpg" width="200" height="130"> <br> 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, <br>
+                <input type="submit" value="visited">
+            </article>
+
+            <article id="at2"> 
+                <img src="HP3.jpg" width="200" height="130"> <br> 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, <br>
+                <input type="submit" value="visited"">
+            </article>
+        </section>
+
+        <aside id="right">
+            <h3> 건강증진센터 </h3>
+            질병 예방 및 삶의 질 향상을 위해 노력합니다. <br> <br>
+            <a href="#"> 건강증진센터 바로가기 </a>
+            <h3> </h3>
+            <label for="uname" class="tit"> 아이디 </label> <br>
+            <input type="text" id="uname" required> <br>
+            <label for="PW" class="tit"> 패스워드 </label> <br>
+            <input type="password" id="PW" required> <br>
+            <input type="submit" value="로그인"> 
+            <input type="reset" value="초기화"> <br>
+            <a href="#"> 회원가입 </a> &nbsp;
+            <a href="#"> 비밀번호분실 </a>
+        </aside>
+
+        <footer> 
+            Copyright(c)2024 hospital
+        </footer>
+
+    </div>
+
+</body>
+</html>
